@@ -1,0 +1,28 @@
+h2[b-3og3gl1h7v] {
+    text-align: center;
+}
+
+.column[b-3og3gl1h7v] {
+    float: left;
+    width: 50%;
+}
+
+.row[b-3og3gl1h7v]:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+form[b-3og3gl1h7v]{
+    display: grid;
+}
+
+label[b-3og3gl1h7v] {
+    text-align: left;
+    margin: 10px;
+    display: flex;
+}
+
+input[b-3og3gl1h7v], button[b-3og3gl1h7v] {
+    margin: 10px;
+}

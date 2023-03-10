@@ -1,0 +1,74 @@
+﻿@page "/reservations"
+@using Traveless.Data
+
+<div class="container">
+
+	<div class="row">
+		<div class="col">
+			<h2 style="font-weight: normal" class="text-center">Reservations</h2>
+			<p>Flight 1</p>
+			<p>Flight 2</p>
+		</div>
+
+		<div class="col">
+			<h2 style="font-weight: normal" class="text-center">Reserve</h2>
+
+			<form>
+				<label for="code" class="col-sm-2" style="margin-top: 10px; text-align: right">Code:</label>
+				<input type="text" class="col-sm-9" readonly style="margin-top: 10px" />
+
+				<label for="flight" class="col-sm-2" style="margin-top: 10px; text-align: right">Flight:</label>
+				<input type="text" class="col-sm-9" readonly style="margin-top: 10px" />
+
+				<label for="airline" class="col-sm-2" style="margin-top: 10px; text-align: right">Airline:</label>
+				<input type="text" class="col-sm-9" readonly style="margin-top: 10px" />
+
+				<label for="cost" class="col-sm-2" style="margin-top: 10px; text-align: right">Cost:</label>
+				<input type="number" class="col-sm-9" readonly style="margin-top: 10px" />
+
+				<label for="name" class="col-sm-2" style="margin-top: 10px; text-align: right">Name:</label>
+				<input type="text" class="col-sm-9" style="margin-top: 10px" />
+
+				<label for="citizenship" class="col-sm-2" style="margin-top: 10px; text-align: right">Citizenship:</label>
+				<input type="text" class="col-sm-9" style="margin-top: 10px" />
+
+				<label for="status" class="col-sm-2" style="margin-top: 10px; text-align: right">Status:</label>
+				<select class="col-sm-9" style="margin-top: 10px">
+					<option>Active</option>
+					<option>Inactive</option>
+				</select>
+
+				<div class="text-center" style="margin-top: 10px">
+					<button type="submit" class="btn btn-primary">Reserve</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="divider" style="margin: 200px" />
+
+	<div class="row">
+		<h2 style="font-weight: normal" class="text-center">Search</h2>
+
+		<form>
+			<label for="code" class="col-sm-2" style="margin-top: 10px; text-align: right">Code:</label>
+			<input type="text" class="col-sm-9" style="margin-top: 10px" />
+
+			<label for="airline" class="col-sm-2" style="margin-top: 10px; text-align: right">Airline:</label>
+			<input type="text" class="col-sm-9" style="margin-top: 10px" />
+
+			<label for="name" class="col-sm-2" style="margin-top: 10px; text-align: right">Name:</label>
+			<input type="text" class="col-sm-9" style="margin-top: 10px" />
+
+			<div class="text-center" style="margin-top: 10px">
+				<button type="submit" class="btn btn-primary">Find Reservations</button>
+			</div>
+		</form>
+	</div>
+
+</div>
+
+@code
+{
+
+}

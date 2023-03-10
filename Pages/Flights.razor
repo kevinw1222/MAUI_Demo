@@ -1,0 +1,91 @@
+﻿@page "/flights"
+@using Traveless.Data
+
+<div class="form">
+
+    <div class="row">
+        <h2 style="text-align: center; font-weight: normal">Flight Finder</h2>
+        <div class="col-sm">
+            <label id="departure">From:</label>
+            <input type="text" class="form-control" placeholder="Any" />
+        </div>
+
+        <div class="col-sm">
+            <label id="destination">To:</label>
+            <input type="text" class="form-control" placeholder="Any" />
+        </div>
+
+        <div class="col-sm">
+            <label id="date">Day:</label>
+            <input type="date" class="form-control" />
+        </div>
+
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary btn-md; form-control" style="margin-top: 24px">Find Flights</button>
+        </div>
+        <div style="margin-bottom: 50px" />
+    </div>
+
+
+    <div class="row">
+        <h2 style="text-align: center; font-weight: normal">Flights</h2>
+        <div class="col-sm">
+            <input type="text" class="form-control" placeholder="Loading..." readonly />
+        </div>
+        <div style="margin-bottom: 50px" />
+    </div>
+
+
+    <div class="row">
+        <h2 style="text-align: center; font-weight: normal">Reserve</h2>
+
+        <div class="row-sm">
+            <label id="flightCode">Flight Code:</label>
+            <input type="text" class="form-control" placeholder="Enter the flight code" />
+        </div>
+
+        <div class="row-sm">
+            <label id="airline">Airline:</label>
+            <input type="text" class="form-control" placeholder="Enter the airline no." />
+        </div>
+
+        <div class="row-sm">
+            <label id="date">Day:</label>
+            <input type="date" class="form-control" />
+        </div>
+
+        <div class="row-sm">
+            <label id="time">Time:</label>
+            <input type="time" class="form-control" />
+        </div>
+
+        <div class="row-sm">
+            <label id="cost">Cost:</label>
+            <input type="number" class="form-control" placeholder="0" readonly />
+        </div>
+
+        <div class="row-sm">
+            <label id="name">Name:</label>
+            <input type="text" class="form-control" placeholder="Enter your name" />
+        </div>
+
+        <div class="row-sm">
+            <label id="citizenship">Citizenship:</label>
+            <input type="text" class="form-control" placeholder="Enter your citizenship" />
+        </div>
+        <div style="margin-bottom: 25px" />
+
+        <div class="text-center d-grid col-3 mx-auto">
+            <button type="submit" class="btn btn-primary">Reserve</button>
+        </div>
+        <div style="margin-bottom: 25px" />
+
+        <div class="text-center d-grid col-3 mx-auto">
+            <input type="text" class="form-control" placeholder="Reservation Code will appear here" style="text-align:center" readonly />
+        </div>
+    </div>
+</div>
+@code
+{
+    
+}
